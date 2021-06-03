@@ -6,6 +6,7 @@ const date = (document.getElementById(
 
 // ********** nav toggle ************
 // select button and links
+
 const navBtn = document.getElementById("nav-toggle");
 const links = document.getElementById("nav-links");
 // add event listener
@@ -15,6 +16,7 @@ navBtn.addEventListener("click", () => {
 
 // ********** smooth scroll ************
 // select links
+//Scrolllink functionality
 const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(link => {
   link.addEventListener("click", e => {
@@ -29,7 +31,6 @@ scrollLinks.forEach(link => {
 
     window.scrollTo({
       left: 0,
-      // top: element.offsetTop,
       top: position,
       behavior: "smooth"
     });
